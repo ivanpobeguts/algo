@@ -1,11 +1,6 @@
+from helper import swap
+
 __author__ = 'Ivan Pobeguts'
-
-
-def swap(array, left, right):
-    if left != right:
-        temp = array[right]
-        array[right] = array[left]
-        array[left] = temp
 
 
 def bubble_sort(ARRAY):
@@ -22,7 +17,7 @@ def bubble_sort(ARRAY):
 
 
 if __name__ == '__main__':
-    ARRAY = [3, 7, 4, 4, 6, 5, 8, 3, 5, 7, 2, 1, 5, 9]
+    ARRAY = [3, 7, 4, 4, 6, 5, 8, 2, 10, 98, 9, 24, 1]
     print('Bubble sort')
     print('-' * 50)
     print('Unsorted array: ', ARRAY)
